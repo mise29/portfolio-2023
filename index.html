@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miyu-portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/nav-logo.svg" alt="">
+            <!-- <h4>M</h4> -->
+        </div>
+        <ul class="nav-links">
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="top-logo">
+        <div class="top-name">
+        <!-- <h1>I'm<br>Miyu Hirano!</h1></div> -->
+        <img class="shadow-logo" src="images/name-logo.svg" alt="">
+        </div>
+        <!-- <div class="m-logo">
+        <img src="images/M-logo.png" alt="">
+        </div> -->
+    </header>
+
+    <section class="works-section">
+        <!-- <h3>Works</h3> -->
+        <div class="works-logo">
+        <img src="images/works-logo.svg" alt=""></div>
+        <div class="slider">
+            <div class="works-page">
+                <div class="box"><img src="images/works-portfolio.png" alt=""></div>
+                <div class="box"><img src="images/works-french02.jpeg" alt=""></div>
+                <div class="box"><img src="images/works-furisode.png" alt=""></div>
+                <div class="box"><img src="images/works-otaru.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="view-more">
+            <a class="works-btn" href="works.html"><button>
+            <p>VIEW MORE</p></button></a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-logo"><img src="images/about-logo.svg" alt=""></div>
+        <!-- <h3>About</h3> -->
+        <div class="about">
+            <div class="about-img"><img src="images/myimage29.png" alt="">
+            </div>
+            <div class="about-contents">
+                <h4>平野 美優 - Miyu Hirano</h4>
+                <p>2003年12月 茨城県出身。<br>普通科高校卒業、TECH.C.に入学し、Webデザインやコーディングについて学ぶ。<br>可愛い・美しいなどワクワクするデザインが好きです。</p>
+
+                <div class="view-more-about">
+                    <a class="about-btn" href="about.html"><button class="about-btn">
+                    <p>VIEW MORE</p></button></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contact-section">
+        <!-- <h3>Contact Us</h3> -->
+        <div class="contact-logo"><img src="images/contact-logo.svg" alt=""></div>
+
+    <div class="contact-card">
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+      
+            <div class="send-btn">
+            <button type="submit"><p>Send Message</p></button>
+            </div>
+          </form>
+
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // 60pxずれた位置からスタート 2000ms=2s かけて現れる
+        ScrollReveal({ reset: false, distance: "30px", duration: 2000 });
+        ScrollReveal().reveal(".shadow-logo", { delay: 300, origin:"bottom" });
+        ScrollReveal().reveal(".works-section", { delay: 200, origin:"bottom" });
+        ScrollReveal().reveal(".about-section", { delay: 200, origin:"bottom" });
+        ScrollReveal({ reset: false, distance: "30px", duration: 3000 });
+        ScrollReveal().reveal("#contact-section", { delay: 200, origin:"bottom" });
+        ScrollReveal({ reset: false, distance: "100px", duration: 2000 });
+        ScrollReveal().reveal(".logo , .nav-links li", { delay: 600, origin:"top" });
+    </script>
+</body>
+
+</html>
