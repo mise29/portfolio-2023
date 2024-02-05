@@ -27,6 +27,10 @@ section {
     align-items: center;
     flex-direction: column;
 }
+.container .section-title {
+    text-align: center;
+    margin: 40px auto 0 auto;
+}
 
 .main-title {
     width: 280px;
@@ -45,7 +49,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .content img {
@@ -112,6 +116,7 @@ section {
         width: 600px;
         padding: 0;
         display: block;
+        margin-top: 18px;
     }
     .section-01 .image {
         text-align: center;
@@ -144,9 +149,11 @@ section {
 /* section 02 */
 .section-title {
     font-size: 3rem;
-    margin: 80px 0 40px 0;
+    margin: 80px auto 0 auto;
 }
-
+.section-03 img {
+    background: #fff;
+}
 .info-title {
     font-size: 1.8rem;
     margin-bottom: 10px;
@@ -157,12 +164,15 @@ section {
     margin-left: 50px;
 }
 
+.section-02-media {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .section-title {
         font-size: 2rem;
         /* margin-bottom: 50px; */
     }
-
     .info-title {
         font-size: 1.4rem;
     }
@@ -180,10 +190,24 @@ section {
     }
 }
 @media screen and (max-width: 768px) {
+    .section-02-02 {
+        display: none;
+    }
+    .section-02-media {
+        display: block;
+    }
     .section-02 .image {
         text-align: center;
     }
+    .section-02-media .image {
+        text-align: center;
+    }
     .section-02 .info {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .section-02-media .info {
         width: 300px;
         margin: 0 auto;
         margin-top: 20px;
@@ -250,12 +274,12 @@ section {
 
 }
 @media screen and (max-width: 768px) {
-
     .section-03 .content {
         margin: 0 auto;
         padding-right: 0;
     }
     .section-03 .image {
+        margin-top: 20px;
         text-align: center;
     }
     .media-info {
