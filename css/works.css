@@ -4,8 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Cardinal",serif; */
-    font-family: Arial, sans-serif;
+    font-family: "Yu Gothic UI", sans-serif;
 }
 
 body {
@@ -50,6 +49,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    padding: 0 60px 100px 60px;
 }
 
 .content img {
@@ -70,6 +70,12 @@ section {
 
 }
 
+h3 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
 .text-box {
     z-index: 20;
     background: rgba(255, 255, 255, 0.1);
@@ -80,8 +86,8 @@ section {
     border-radius: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.text-box h3 {
-    font-size: 2rem;
+.text-box h4 {
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 .media-text-box {
@@ -148,20 +154,23 @@ section {
 
 /* section 02 */
 .section-title {
-    font-size: 3rem;
+    font-size: 2.4rem;
     margin: 80px auto 0 auto;
 }
 .section-03 img {
     background: #fff;
 }
 .info-title {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
 .info {
     width: 700px;
     margin-left: 50px;
+}
+.section-02-02 .info {
+    margin-left: 0;
 }
 
 .section-02-media {
@@ -248,6 +257,15 @@ section {
 
 .section-03 {
     margin-bottom: 80px;
+}
+
+p {
+    line-height: 2;
+    letter-spacing: 1.8px;
+    font-size: 1rem;
+}
+.media-info p {
+    padding-right: 20px;
 }
 
 @media screen and (max-width: 1024px) {

@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Cardinal", serif; */
-    font-family: "sofia-pro","sans-serif";
+    font-family: "Yu Gothic UI", sans-serif;
 }
 
 body {
@@ -11,28 +10,10 @@ body {
     overflow-x: hidden;
 }
 
-section {
-    padding: 60px 100px;
-}
-
-.section-01 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #EA7AA0;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .main-title {
-    width: 260px;
-    margin-top: -40px;
-    margin-bottom: 50px;
+    width: 280px;
+    padding: 60px 0 40px 0;
+    margin: -40px auto 50px auto;
 }
 
 .main-title span {
@@ -43,237 +24,195 @@ section {
     margin-top: -48px;
 }
 
+.about-profile {
+    padding: 0 100px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: end;
+}
+
+.name {
+    text-align: left;
+}
+
 .name h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
     font-size: 1.8rem;
-    letter-spacing: 4px;
-    font-weight: normal;
-}
-
-
-.name h4 {
-    font-size: 1rem;
     letter-spacing: 2px;
-    font-weight: normal;
-    text-align: center;
-}
-
-.profile p {
-    font-size: .9rem;
-    letter-spacing: .5px;
     line-height: 2;
 }
 
-.about-profile {
-    width: 780px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px auto 0 auto;
-}
-
-.profile-img img {
-    width: 260px;
-    height: 260px;
-    background: #EA7AA0;
-    border-radius: 50%;
+.name p {
+    margin-top: 20px;
+    padding: 0;
+    letter-spacing: 1px;
+    line-height: 2;
 }
 
 .detail {
-    border-top: 1px solid #EA7AA0;
-    border-bottom: 1px solid #EA7AA0;
-    width: 82%;
-    margin-top: 100px;
-    padding: 100px 0;
-    line-height: 2.2;
-    letter-spacing: .5px;
+    width: 600px;
 }
+
 .detail p {
     font-size: 1rem;
-    width: 600px;
-    margin: 0 auto;
-    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.8;
 }
 
-.border {
-    width: 80%;
-    border-bottom: 1px solid #EA7AA0;
+.skill-section {
+    padding-left: 28px;
 }
 
-
-#content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 540px;
+.skills {
+    margin-top: 100px;
+    padding: 60px 100px;
 }
 
-.bar {
-    max-width: 400px;
-    width: 100%;
-    margin: 1rem;
+.skills p {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+.skills span {
+    font-size: 1rem;
+    margin-left: 12px;
+}
+
+.icons i {
+    font-size: 8rem;
     color: #fff;
-    padding: 0.25rem;
-    animation: bar-animation 1 2s;
-    background: pink;
 }
 
-.bar1 {
-    max-width: 70%;
+.fa-pen-to-square {
+    padding: 0 26px;
 }
 
-.bar2 {
-    max-width: 60%;
+.fa-laptop-code {
+    padding: 0 26px 0 0;
 }
 
-.bar3 {
-    max-width: 40%;
+.icons p {
+    color: #000;
+    font-size: 1.2rem;
 }
 
-.bar4 {
-    max-width: 70%;
+.icon-design {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+.icon-design h4 {
+    font-size: 1.8rem;
+    padding-left: 40px;
+}
+.icon-design p {
+    font-size: 1.2rem;
+    padding-left: 40px;
+    margin-left: auto;
+    padding-top: 20px;
 }
 
-.bar5 {
-    max-width: 50%;
-}
+/* .icon-design span {
+    font-size: 1rem;
+} */
 
-.graph {
-    width: 48%;
-    margin: 0 auto;
-    padding-left: 100px;
-}
+/* .icon-development span {
+    font-size: 1rem;
+} */
 
-.graph-01 {
+.icon-development {
+    font-size: 1rem;
     display: flex;
     align-items: center;
 }
 
-.skill h2 {
-    color: #EA7AA0;
+.icon-development h4 {
+    font-size: 1.8rem;
+    padding-left: 40px;
+} 
+.icon-development p {
+    font-size: 1.2rem;
+    padding-left: 40px;
+    margin-left: auto;
+    padding-top: 20px;
 }
 
-.graph-p {
-    color: #EA7AA0;
-    width: 100px;
+.detail-02 {
+    display: none;
 }
-
-@keyframes bar-animation {
-    0% {
-        width: 0px;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.skill h2 {
-    margin: 84px 0 48px 0;
-    text-align: center;
-}
-
-.skill {
-    margin-bottom: 100px;
-}
-
-@media screen and (max-width:1024px) {
-
-    .graph {
-        width: 60%;
-        margin: 0 auto;
-        padding-left: 0;
-    }
-
-    .bar1 {
-        max-width: 70%;
-    }
-
-    .bar2 {
-        max-width: 60%;
-    }
-
-    .bar3 {
-        max-width: 40%;
-    }
-
-    .bar4 {
-        max-width: 70%;
-    }
-
-    .bar5 {
-        max-width: 50%;
-    }
-
-    .skill h2 {
-        margin: 60px 0 32px 0;
-        text-align: center;
-    }
-
-}
-
 @media screen and (max-width:768px) {
     .about-profile {
-
-        text-align: center;
-    }
-
-    .name h3 {
-        font-size: 2rem;
-    }
-
-    .about-profile {
         display: block;
+        padding: 0 28px;
+    }
+    .name h3 {
+        font-size: 2.2rem;
+    }
+    .name p {
+        font-size: 1.2rem;
     }
 
-    .profile {
-        margin-top: 40px;
-    }
-    .profile-img {
-        width: 200px;
-        height: 200px;
-        margin: 48px auto 0 auto;
+    .detail {
+        display: none;
     }
 
-    .main-title {
-        font-size: 2.4rem;
-        margin-bottom: 50px;
-    }
-
-    .graph {
-        width: 68%;
+    .detail-02 {
+        display: block;
+        width: 100%;
+        text-align: left;
         margin: 0 auto;
-        padding-left: 20px;
+        margin-top: 40px;
+        letter-spacing: 2px;
+        line-height: 2;
     }
-    .graph-p {
-        width: 80px;
-        font-size: .7rem;
+    .detail-02 p {
+        text-align: left;
     }
-    .bar {
-        margin: .6rem;
+    .skills {
+        padding: 60px 28px;
     }
-    .bar1 {
-        max-width: 60%;
+    .skill-section {
+        padding-left: 0;
+        text-align: left;
     }
-
-    .bar2 {
-        max-width: 50%;
+    .icon-design h4 {
+        border-top: 1px solid #000;
+        padding-left: 0;
+        padding-top: 20px;
     }
-
-    .bar3 {
-        max-width: 30%;
+    .icon-development h4 {
+        border-top: 1px solid #000;
+        padding-left: 0;
+        padding-top: 20px;
     }
-
-    .bar4 {
-        max-width: 60%;
+    .icon-design p {
+        text-align: left;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.8;
     }
-
-    
-
-    .skill h2 {
-        margin: 60px 0 32px 0;
-        text-align: center;
+    /* .icon-design span {
+        line-height: 2;
+        font-weight: normal;
+    } */
+    .icon-development p {
+        text-align: left;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.8;
     }
-
-
+    /* .icon-development span {
+        line-height: 2;
+        font-weight: normal;
+    } */
+    .icons i {
+        display: none;
+    }
+    .icons p {
+        padding-left: 0;
+    }
 }

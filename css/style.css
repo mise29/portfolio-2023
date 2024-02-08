@@ -7,11 +7,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* font-family: "Cardinal",serif; */
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Yu Gothic UI", sans-serif;
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -190,32 +189,8 @@ nav {
     margin-top: -100px;
     justify-content: center;
 }
-.m-logo {
-    padding-top: 80px;
-    text-align: right;
-}
-.m-logo img {
-    width: 40rem;
-}
 .box-top {
     display: none;
-}
-@media screen and (max-width: 1024px) {
-    .top-logo {
-        gap: 2px;
-    }
-    /* .shadow-logo {
-        width: 600px;
-        height: 600px;
-    } */
-    /* .top-logo h1 {
-        font-size: 3.8rem;
-        padding-left: 120px;
-    } */
-    .m-logo img {
-        width: 38rem;
-        padding-right: 40px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -230,16 +205,8 @@ nav {
     }
 
     .top-name img {
-        margin-top: -10px;
+        margin-top: 80px;
     }
-    /* .top-logo h1 {
-        padding: 0;
-        position: absolute;
-        top: 22vh;
-        right: 0;
-        left: 0;
-        font-size: 2.6rem;
-    } */
     .m-logo {
         padding: 0;
         text-align: center;
@@ -406,12 +373,11 @@ button {
     height: 2.8em;
     background: #EA7AA0;
     border-radius: 50px;
-    /* border: 1px solid #EA7AA0; */
-    /* box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2); */
-    /* margin-bottom: 100px; */
 }
 
 button p {
+    padding: 0;
+    margin: 0;
     text-align: center;
     color: #fff;
     letter-spacing: 1.2px;
@@ -613,6 +579,10 @@ textarea:focus {
     text-align: center;
     letter-spacing: .2px;
 }
+.send-btn p {
+    padding: 0;
+    margin: 0;
+}
 .contact-card p {
     font-size: .88rem;
 }
@@ -625,4 +595,30 @@ textarea:focus {
 button:hover {
     transition: .5s;
     background-color: #F8A8C5;
+}
+
+.return a {
+    margin-left: auto;
+    padding: 80px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.arrow-return {
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #EA7AA0;
+    border-right: 3px solid #EA7AA0;
+    transform: rotate(-45deg);
+    margin-top: 5px;
+}
+.return p {
+    font-size: 0.8rem;
+    text-align: right;
+    margin-right: 24px;
+    margin-top: -20px;
+    color: #EA7AA0;
 }
