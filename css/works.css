@@ -9,7 +9,6 @@
 
 body {
     background: #FAE7EB;
-    overflow-x: hidden;
 }
 
 section {
@@ -18,6 +17,7 @@ section {
     justify-content: center;
     padding: 60px 100px;
     color: #EA7AA0;
+    overflow-x: hidden;
 }
 
 .container {
