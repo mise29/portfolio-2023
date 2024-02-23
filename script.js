@@ -1,7 +1,7 @@
 const burger = document.querySelector(".burger");
-const nav = document.querySelector(".nav-links");
-// querySelectorAll = .nav-links li の全てを取得できる（all）
-const navLinks = document.querySelectorAll(".nav-links li");
+const nav = document.querySelector(".navLi");
+// querySelectorAll = .navLi li の全てを取得できる（all）
+const navLinks = document.querySelectorAll(".navLi li");
 
 
 // burger push
@@ -20,14 +20,9 @@ burger.addEventListener("click", () => {
     burger.classList.toggle("toggle")
 })
 
-// works slider
-document.addEventListener("DOMContentLoaded", function () {
-    const sliderWrapper = document.querySelector(".works-page");
-    const sliderItems = document.querySelectorAll(".box");
-  
-    // オリジナルのスライダーアイテムをクローンして末尾に追加
-    sliderItems.forEach((item) => {
-      const clone = item.cloneNode(true);
-      sliderWrapper.appendChild(clone);
-    });
-  });
+
+//ページをトップに戻す function() ()は何でも可
+document.querySelector('.rayTopLogo').addEventListener('click', function(e) {
+    e.preventDefault(); // ページ遷移をキャンセル
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
