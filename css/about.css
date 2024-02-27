@@ -222,3 +222,19 @@ body {
         padding-left: 0;
     }
 }
+
+.back {
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+.back button {
+    background: #fff;
+    color: #212121;
+    border-radius: 20px;
+    padding: 10px 18px;
+    border: none;
+}
+.back button:hover {
+    transform: translateY(-5px);
+    transition: .4s;
+}
